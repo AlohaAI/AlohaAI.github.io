@@ -173,9 +173,6 @@ section.features .text-muted {
   text-decoration: underline;
 }
 
-.flip-container {
-  perspective: 1000;
-}
 
 .flip-container:hover .flip-box,
 .flip-container.hover .flip-box {
@@ -184,7 +181,9 @@ section.features .text-muted {
 
 .flip-box {
   position: relative;
+  margin: 0 auto;
   min-height: 260px;
+  width: 260px;
   transition: all 0.4s ease-in-out;
   transform-style: preserve-3d;
 }
