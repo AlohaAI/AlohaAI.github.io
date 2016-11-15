@@ -173,6 +173,38 @@ section.features .text-muted {
   text-decoration: underline;
 }
 
+.flip-container {
+  perspective: 1000;
+}
+
+.flip-container:hover .flip-box,
+.flip-container.hover .flip-box {
+  transform: rotateY(180deg);
+}
+
+.flip-box {
+  position: relative;
+  min-height: 260px;
+  transition: all 0.4s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.flip-front,
+.flip-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flip-front {
+  z-index: 2;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
 /*                       */
 /* SECTION: APPLY ;      */
 /*                       */
