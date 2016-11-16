@@ -130,8 +130,8 @@ header, .bg-secondary {
   letter-spacing: 0.02em;
 }
 @media (max-width: 767px) {
-  .section-heading {
-    font-size: 44px;
+  .intro .section-heading h2 {
+    font-size: 42px;
   }
 }
 
