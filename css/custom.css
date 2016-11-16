@@ -235,3 +235,7 @@ section.cta {
     text-align: center;
   }
 }
+
+footer a {
+  color: inherit;
+}
